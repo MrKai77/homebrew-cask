@@ -13,6 +13,7 @@ cask "loop" do
   end
 
   auto_updates true
+  conflicts_with cask: "loop-prerelease"
   depends_on macos: ">= :monterey"
 
   app "Loop.app"
