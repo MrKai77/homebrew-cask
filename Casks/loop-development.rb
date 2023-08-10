@@ -1,11 +1,16 @@
-cask "loop-prerelease" do
+cask "loop-development" do
   version :latest
   sha256 :no_check
 
-  url "https://github.com/MrKai77/Loop/releases/download/prerelease/Loop.zip"
+  url "https://github.com/MrKai77/Loop/releases/download/development_build/Loop.zip"
   name "Loop"
   desc "Radial menu window manager"
   homepage "https://github.com/MrKai77/Loop"
+
+  livecheck do
+    url "https://github.com/MrKai77/Loop/releases/download/development_build/Loop.zip"
+    strategy :header_match
+  end
 
   auto_updates false
   conflicts_with cask: "loop"
