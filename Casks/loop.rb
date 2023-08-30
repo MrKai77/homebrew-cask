@@ -1,6 +1,6 @@
 cask "loop" do
-  version "1.0.0-beta.6"
-  sha256 "ec5707e2159d16f8bc34ce554b3799d190c1238e2604ad6de52a0ee66ee7f4ec"
+  version "1.0.0-beta.7"
+  sha256 "3031b7c9fc7aab0104eded2c345e014eef325159d4bf937fe7f5c279ee87703c"
 
   url "https://github.com/MrKai77/Loop/releases/download/#{version}/Loop.zip"
   name "Loop"
@@ -13,8 +13,7 @@ cask "loop" do
   end
 
   auto_updates true
-  conflicts_with cask: "loop-prerelease"
-  depends_on macos: ">= :monterey"
+  depends_on macos: ">= :ventura"
 
   app "Loop.app"
 
